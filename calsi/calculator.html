@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calci.css">
+        <title>calculator</title>
+    </head>
+    <body>
+        <form name="form2" action="calculator1.html" method="post" class="calci">
+            <div><input type="text" name="answer" id="display"></div>
+            <br>
+            <div><input type="button" value="C" class="desig" onclick="form2.answer.value=''">
+                <input type="button" value="<" class="desig" onclick="form2.answer.value=form2.answer.value.substring(0,form2.answer.value.length*1-1)">
+                <input type="button" value="00" class="desig" onclick="form2.answer.value+='00'">
+                <input type="button" value="/" class="opdesig" onclick="form2.answer.value+='/'">
+            </div>
+            <br>
+            <div>
+                <input type="button" value="7" class="desig" onclick="form2.answer.value+='7'">
+            <input type="button" value="8" class="desig" onclick="form2.answer.value+='8'">
+            <input type="button" value="9" class="desig" onclick="form2.answer.value+='9'">
+            <input type="button" value="*" class="opdesig" onclick="form2.answer.value+='*'">
+            </div>
+            <br>
+            <div><input type="button" value="4" class="desig" onclick="form2.answer.value+='4'">
+                <input type="button" value="5" class="desig" onclick="form2.answer.value+='5'">
+                <input type="button" value="6" class="desig" onclick="form2.answer.value+='6'">
+                <input type="button" value="-" class="opdesig" onclick="form2.answer.value+='-'">
+            </div>
+            <br>
+            <div><input type="button" value="1" class="desig" onclick="form2.answer.value+='1'">
+                <input type="button" value="2" class="desig" onclick="form2.answer.value+='2'">
+                <input type="button" value="3" class="desig" onclick="form2.answer.value+='3'">
+                <input type="button" value="+" class="opdesig" onclick="form2.answer.value+='+'">
+            </div>
+            <br>
+            <div><input type="button" value="0" class="zero" onclick="form2.answer.value+='0'">
+                <input type="button" value="." class="desig" onclick="form2.answer.value+='.'">
+                <input type="button" value="=" class="desig" onclick="form2.answer.value=eval(form2.answer.value)">
+            </div>
+        </form>
+        <span class="ti">CALCULATOR</span>
+    </body>
+</html>
